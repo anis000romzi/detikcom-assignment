@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: #5468e7;
+  --soft-violet: #c897e4;
+  --dark-blue: #232340;
+  --desaturated-blue: #7676b2;
+  --archive-button-color: #f5f5f5;
+  --light-orange: #ffba79;
+}
+
+body,
+html {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.get-access {
+  background-color: rgb(84, 104, 231, 0.6);
+  border-color: transparent;
+  color: black;
+}
+
+.blog-header > h1 {
+  font-size: 2em;
+}
+
+.blog-header > div p {
+  color: var(--desaturated-blue);
+}
+
+.blog-content > div strong {
+  color: var(--soft-violet);
+}
+
+.blog-content > div p {
+  font-size: 1.5em;
+}
+
+.blog-content > div span {
+  font-size: 0.9em;
+}
+
+.comments img {
+  height: 64px;
+  width: auto;
+}
+
+.comments .form-floating {
+  height: 200px;
+  width: 100%;
+}
+
+.comments textarea {
+  border: var(--desaturated-blue) 2px solid;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+footer h3 {
+  color: var(--soft-blue);
+}
+
+footer a {
+  display: block;
+  font-size: 0.85em;
+  text-decoration: none;
+  color: var(--archive-button-color);
+  margin: 15px 0;
+}
+
+footer span {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .stay-update {
+    order: 1;
+    width: 60%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .blog-header h1 {
+    font-size: 2.5em;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .footer-title {
+    width: 30%;
+    padding-top: 50px;
+  }
+
+  .footer-info {
+    gap: 5%;
+  }
+
+  .stay-update {
+    padding-top: 50px;
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  footer {
+    gap: 10%;
+  }
+
+  .footer-title {
+    width: 20%;
+    padding-left: 100px;
+  }
+
+  .footer-info {
+    gap: 10%;
+  }
+
+  .stay-update {
+    width: 20%;
+    padding-right: 50px;
+  }
+}

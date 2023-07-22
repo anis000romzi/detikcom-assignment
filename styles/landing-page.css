@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: #5468e7;
+  --soft-violet: #c897e4;
+  --dark-blue: #232340;
+  --desaturated-blue: #7676b2;
+  --archive-button-color: #f5f5f5;
+  --light-orange: #ffba79;
+}
+
+body,
+html {
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+input,
+button {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.get-access {
+  background-color: rgb(84, 104, 231, 0.6);
+  border-color: transparent;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url('../assets/landing-page/hero-img-small.png');
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-color: var(--dark-blue);
+}
+
+.hero-text {
+  margin-top: 260px;
+}
+
+.register-button {
+  background-color: var(--soft-blue);
+  border-color: transparent;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.feature-text > h2 {
+  font-size: 2em;
+}
+
+.feature-text > a {
+  color: var(--soft-blue);
+}
+
+.arrow-slider {
+  color: var(--soft-blue);
+}
+
+.reviews > h2 {
+  font-size: 2em;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+footer h3 {
+  color: var(--soft-blue);
+}
+
+footer a {
+  display: block;
+  font-size: 0.85em;
+  color: var(--archive-button-color);
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+footer span {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 450px) {
+  .hero {
+    background-image: url('../assets/landing-page/hero-img-med.png');
+  }
+
+  .hero-text > h1 {
+    font-size: 2.5em;
+  }
+
+  .register-form {
+    display: flex;
+  }
+
+  .register-button {
+    width: 40%;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+
+  .register-form > .input-group {
+    width: 60%;
+  }
+
+  .feature-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feature-content:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+
+  .feature-content:nth-child(5) {
+    flex-direction: row-reverse;
+  }
+
+  .feature-content img {
+    height: 40vh;
+  }
+
+  .reviews .card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+  }
+
+  .stay-update {
+    order: 1;
+    width: 60%;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-text {
+    width: 70%;
+  }
+
+  .register-form {
+    width: 70%;
+  }
+
+  .feature-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .feature-main img {
+    height: 70vh;
+  }
+
+  .feature-content img {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  footer {
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .footer-title {
+    width: 30%;
+    padding-top: 50px;
+  }
+
+  .footer-info {
+    gap: 5%;
+  }
+
+  .stay-update {
+    padding-top: 50px;
+    width: 30%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero {
+    background-image: url('../assets/landing-page/hero-img.png');
+  }
+
+  .hero-text {
+    width: 50%;
+    margin-top: 20%;
+    margin-left: 50px;
+  }
+
+  .register-form {
+    width: 40%;
+    margin-left: 50px;
+  }
+
+  .feature-main img {
+    height: 90vh;
+  }
+
+  .feature-content {
+    padding: 0 50px;
+  }
+
+  .feature h2 {
+    font-size: 2.5em;
+  }
+
+  .feature-content img {
+    height: 70vh;
+  }
+
+  footer {
+    gap: 10%;
+  }
+
+  .footer-title {
+    width: 20%;
+    padding-left: 100px;
+  }
+
+  .footer-info {
+    gap: 10%;
+  }
+
+  .stay-update {
+    width: 20%;
+    padding-right: 50px;
+  }
+}

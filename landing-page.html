@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/landing-page.css" />
+
+    <script
+      src="https://kit.fontawesome.com/18ba30db93.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong p-lg-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="assets/logo.png" alt="Team Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Product</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="blog-list-1.html">Blog</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Support</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#">Log In</a>
+              </li>
+            </ul>
+            <button type="button" class="get-access btn btn-primary p-2">
+              Get Access
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero text-light container-fluid py-4 px-4 mx-auto">
+        <div class="hero-text">
+          <h1 class="fw-bold">Instant collaboration for remote teams</h1>
+          <p>
+            All-in-one place for your remote team to chat, collaborate and track
+            project progress
+          </p>
+        </div>
+        <div class="register-form mt-5 mb-2">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Email"
+              aria-describedby="email"
+            />
+          </div>
+          <button type="button" class="register-button btn btn-primary p-2">
+            Register
+          </button>
+        </div>
+      </section>
+      <section class="feature container-fluid overflow-hidden">
+        <div class="feature-main">
+          <img
+            src="assets/landing-page/mockup.png"
+            alt="Feature Image"
+            class="mt-5"
+          />
+          <div class="feature-text py-4 px-4 mx-auto">
+            <h2 class="fw-bold mb-3">Chats for your distributed teams</h2>
+            <p class="mb-5">
+              Team combines the immediacy of real-time chat with an email
+              threading model. With Team, you can catch up on important
+              conversations while ignoring irrelevant ones.
+            </p>
+            <a href="#" class="fw-bold"
+              >Learn more <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+        <div class="feature-content mt-5">
+          <img
+            src="assets/landing-page/img-group.png"
+            alt="Feature Image"
+            class="img-fluid"
+          />
+          <div class="feature-text py-4 px-4 mx-auto">
+            <h2 class="fw-bold mb-3">Chats for your distributed teams</h2>
+            <p class="mb-5">
+              Team combines the immediacy of real-time chat with an email
+              threading model. With Team, you can catch up on important
+              conversations while ignoring irrelevant ones.
+            </p>
+            <a href="#" class="fw-bold"
+              >Learn more <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+        <div class="feature-content mt-5">
+          <img
+            src="assets/landing-page/img-group (1).png"
+            alt="Feature Image"
+            class="img-fluid"
+          />
+          <div class="feature-text py-4 px-4 mx-auto">
+            <h2 class="fw-bold mb-3">Choose how you want to work</h2>
+            <p class="mb-5">
+              In Team, you've got all the flexibility to work when, where and
+              how it's best for you. You can easily chat, send audio and video
+              clips, or hop ona huddle to talk this out live.
+            </p>
+            <a href="#" class="fw-bold"
+              >Learn more <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+        <div class="feature-content mt-5">
+          <img
+            src="assets/landing-page/img-group (2).png"
+            alt="Feature Image"
+            class="img-fluid"
+          />
+          <div class="feature-text py-4 px-4 mx-auto">
+            <h2 class="fw-bold mb-3">Move faster with your Team tools</h2>
+            <p class="mb-5">
+              WIth your other work apps connected to Team, you can work faster
+              by switching tabs less. And with powerful tools like Workflow
+              Builder, you can automate away routine tasks.
+            </p>
+            <a href="#" class="fw-bold"
+              >Learn more <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="reviews container-fluid py-4 px-4 mx-auto">
+        <h2 class="fw-bold mb-1 mt-5 text-center">
+          What people say about Team
+        </h2>
+        <div class="swiper mt-5">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="card border-light mb-3 shadow-sm p-3 swiper-slide">
+              <div class="card-body">
+                <img
+                  src="assets/landing-page/rating.png"
+                  alt="Rating star"
+                  class="mb-3"
+                />
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Explicabo cumque in deserunt, sed nobis veniam assumenda hic,
+                  quis quisquam repellat ut ad cum obcaecati dolorem perferendis
+                  architecto earum, tempora blanditiis!
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-light">
+                <img
+                  src="assets/landing-page/avatars/avatar.png"
+                  alt="Profile picture"
+                />
+                <div class="ms-2">
+                  <p class="m-0 fs-3">Chelsea Morgan</p>
+                  <span class="text-secondary">CEO at Subway</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card border-light mb-3 shadow-sm p-3 rounded swiper-slide"
+            >
+              <div class="card-body">
+                <img
+                  src="assets/landing-page/rating.png"
+                  alt="Rating star"
+                  class="mb-3"
+                />
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Explicabo cumque in deserunt, sed nobis veniam assumenda hic,
+                  quis quisquam repellat ut ad cum obcaecati dolorem perferendis
+                  architecto earum, tempora blanditiis!
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-light">
+                <img
+                  src="assets/landing-page/avatars/avatar (1).png"
+                  alt="Profile picture"
+                />
+                <div class="ms-2">
+                  <p class="m-0 fs-3">Nick Cave</p>
+                  <span class="text-secondary">CMO at Nokia</span>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3 shadow-sm p-3 swiper-slide">
+              <div class="card-body">
+                <img
+                  src="assets/landing-page/rating.png"
+                  alt="Rating star"
+                  class="mb-3"
+                />
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Explicabo cumque in deserunt, sed nobis veniam assumenda hic,
+                  quis quisquam repellat ut ad cum obcaecati dolorem perferendis
+                  architecto earum, tempora blanditiis!
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-light">
+                <img
+                  src="assets/landing-page/avatars/avatar (2).png"
+                  alt="Profile picture"
+                />
+                <div class="ms-2">
+                  <p class="m-0 fs-3">Lana Rosenfeld</p>
+                  <span class="text-secondary">Senior VP at Pinterest</span>
+                </div>
+              </div>
+            </div>
+            <div class="card border-light mb-3 shadow-sm p-3 swiper-slide">
+              <div class="card-body">
+                <img
+                  src="assets/landing-page/rating.png"
+                  alt="Rating star"
+                  class="mb-3"
+                />
+                <p class="card-text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Explicabo cumque in deserunt, sed nobis veniam assumenda hic,
+                  quis quisquam repellat ut ad cum obcaecati dolorem perferendis
+                  architecto earum, tempora blanditiis!
+                </p>
+              </div>
+              <div class="card-footer bg-transparent border-light">
+                <img
+                  src="assets/landing-page/avatars/avatar (3).png"
+                  alt="Profile picture"
+                />
+                <div class="ms-2">
+                  <p class="m-0 fs-3">Giorgio Moroder</p>
+                  <span class="text-secondary">CTO at Glovo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="arrow-slider fs-1 text-center">
+          <span class="arrow-slider-prev me-4">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </span>
+          <span class="arrow-slider-next">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container-fluid py-4 px-4 mx-auto text-light mt-5">
+      <div class="footer-title">
+        <img src="assets/logo.png" alt="Team Logo" class="my-3" />
+        <p>Collaboration platform for modern team</p>
+      </div>
+      <div class="stay-update">
+        <h3>Stay up to date</h3>
+        <p class="mb-1">Subscribe to our newsletter</p>
+        <div class="input-group mb-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email"
+            aria-label="Email"
+            aria-describedby="email"
+          />
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="company my-5">
+          <h3>Company</h3>
+          <a href="#">Product</a>
+          <a href="blog-list-1.html">Blog</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="features my-5">
+          <h3>Features</h3>
+          <a href="#">Screen Sharing</a>
+          <a href="#">iOS & Android Apps</a>
+          <a href="#">File Sharing</a>
+          <a href="#">User Management</a>
+        </div>
+        <div class="contact my-5">
+          <h3>Contact Us</h3>
+          <a href="#">info@teamapp.com</a>
+          <a href="#">1-800-200-300</a>
+          <a href="#">1010 Sunset Blv. Palo Alto, California</a>
+        </div>
+      </div>
+      <span class="mb-2 ms-lg-5">&copy; Copyright Team Inc.</span>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/landing-page.js"></script>
+  </body>
+</html>
